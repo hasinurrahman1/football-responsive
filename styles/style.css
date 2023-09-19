@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:orange;
+}
+.nav-title{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-btn{
+    background-color: orangered;
+    border: none;
+    padding: 7px 50px;
+    font-weight: 500;
+    font-size: 20px;
+}
