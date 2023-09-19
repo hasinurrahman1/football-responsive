@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
-    background-color:orange;
+header {
+    background-color:blue;
+    height: 650px;
 }
-.nav-title{
+
+.nav-title {
     display: flex;
     list-style-type: none;
     gap: 40px;
@@ -14,15 +16,70 @@ header{
     font-weight: 500;
     font-size: 20px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 40px;
 }
-.nav-btn{
-    background-color: orangered;
+
+.nav-btn {
+    background-color: black;
     border: none;
     padding: 7px 50px;
     font-weight: 500;
     font-size: 20px;
+    color: white;
+}
+
+/* banner section */
+.banner-part {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+
+.banner-title {
+    width: 400px;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.banner-title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+
+.banner-title button{
+    background-color: black;
+    border: none;
+    padding: 7px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+/* -------------------------- */
+.banner {
+    position: relative;
+    width: 50%;
+}
+
+.player-img {
+    width: 550px;
+}
+
+.football-img {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 40.5%;
+    right: 39%;
+    transition: transform 5s ease-in-out;
+}
+.banner-part:hover .football-img{
+    transform: rotate(-35deg) translate(-350px,-350px);
 }
