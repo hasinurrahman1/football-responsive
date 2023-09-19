@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color:blue;
+    background-color: #0000ff;
     height: 650px;
 }
 
@@ -12,7 +12,7 @@ header {
     display: flex;
     list-style-type: none;
     gap: 40px;
-    color: white;
+    color: #ffffff;
     font-weight: 500;
     font-size: 20px;
 }
@@ -25,14 +25,14 @@ nav {
 }
 
 .nav-btn {
-    background-color: black;
+    background-color: #dc143c;
     border: none;
     padding: 7px 50px;
     font-weight: 500;
     font-size: 20px;
-    color: white;
+    color: #ffffff;
+    cursor: pointer;
 }
-
 /* banner section */
 .banner-part {
     display: flex;
@@ -50,17 +50,18 @@ nav {
 .banner-title h1 {
     font-size: 64px;
     font-weight: 700;
-    color: white;
+    color: #ffffff;
 }
 
 .banner-title button{
-    background-color: black;
+    background-color: #dc143c;
     border: none;
     padding: 7px 40px;
     font-weight: 500;
     font-size: 20px;
     color: white;
     margin-top: 20px;
+    cursor: pointer;
 }
 /* -------------------------- */
 .banner {
@@ -68,7 +69,7 @@ nav {
     width: 50%;
 }
 
-.player-img {
+.banner-img {
     width: 550px;
 }
 
@@ -82,4 +83,44 @@ nav {
 }
 .banner-part:hover .football-img{
     transform: rotate(-35deg) translate(-350px,-350px);
+}
+/* main section */
+.main-section{
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    gap: 35px;
+}
+.players{
+    width: 320px;
+    background-color: #f5f5f5;
+
+}
+.player-img{
+    width: 300px;
+    height: 280px;
+    margin: 10px 10px;
+}
+.player-details{
+    margin: 10px 10px;
+}
+.player-details h2{
+    font-size: 32px;
+    font-weight:bold;
+}
+.player-details p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.player-details button{
+    background-color: #dc143c;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
 }
