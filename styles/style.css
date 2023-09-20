@@ -27,18 +27,25 @@ nav {
 .nav-btn {
     background-color: #dc143c;
     border: none;
-    padding: 7px 50px;
+    padding: 7px 30px;
     font-weight: 500;
     font-size: 20px;
     color: #ffffff;
-    cursor: pointer;
 }
+
+.nav-btn:hover {
+    border: 1.5px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 6px 30px;
+}
+
 /* banner section */
 .banner-part {
     display: flex;
     justify-content: space-around;
     margin-top: 70px;
-    /* border: 1px solid red; */
 }
 
 .banner-title {
@@ -53,16 +60,25 @@ nav {
     color: #ffffff;
 }
 
-.banner-title button{
+.banner-title button {
     background-color: #dc143c;
     border: none;
-    padding: 7px 40px;
+    padding: 7px 35px;
     font-weight: 500;
     font-size: 20px;
     color: white;
     margin-top: 20px;
-    cursor: pointer;
 }
+
+.banner-title button:hover {
+    border: 1.5px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px 31px;
+}
+
 /* -------------------------- */
 .banner {
     position: relative;
@@ -81,46 +97,113 @@ nav {
     right: 39%;
     transition: transform 5s ease-in-out;
 }
-.banner-part:hover .football-img{
-    transform: rotate(-35deg) translate(-350px,-350px);
+
+.banner-part:hover .football-img {
+    transform: rotate(-35deg) translate(-350px, -350px);
 }
+
 /* main section */
-.main-section{
+.main-section {
     width: 950px;
     margin: 0 auto;
     margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     gap: 35px;
 }
-.players{
+
+.players {
     width: 320px;
     background-color: #f5f5f5;
-
 }
-.player-img{
+
+.player-img {
     width: 300px;
     height: 280px;
     margin: 10px 10px;
 }
-.player-details{
+
+.player-details {
     margin: 10px 10px;
 }
-.player-details h2{
+
+.player-details h2 {
     font-size: 32px;
-    font-weight:bold;
+    font-weight: bold;
 }
-.player-details p{
+
+.player-details p {
     margin-top: 10px;
     font-size: 20px;
+    color: #6C6C6C;
 }
-.player-details button{
+
+.player-details button {
     background-color: #dc143c;
     border: none;
-    padding: 5px 15px;
+    padding: 5px 20px;
     font-size: 16px;
     color: #ffffff;
-    cursor: pointer;
     margin-top: 10px;
+}
+
+.player-details button:hover {
+    border: 1.5px solid #dc143c;
+    background: none;
+    color: #dc143c;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 4px 16px;
+}
+
+/* sub section */
+.sub-section {
+    width: 1030px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.highlight {
+    width: 370px;
+    margin-top: 70px;
+}
+
+.highlight h2 {
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.highlight p {
+    color: #6C6C6C;
+    margin-top: 20px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.highlight button {
+    background-color: #dc143c;
+    margin-top: 20px;
+    border: none;
+    padding: 7px 35px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.highlight button:hover {
+    border: 1.5px solid #dc143c;
+    background: none;
+    color: #dc143c;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px 31px;
+}
+
+.highlight-img {
+    background-color: #2D25A0;
 }
