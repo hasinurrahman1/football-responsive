@@ -103,7 +103,7 @@ nav {
 }
 
 /* main section */
-.main-section {
+.main-container {
     width: 950px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +158,7 @@ nav {
 }
 
 /* sub section */
-.sub-section {
+.sub-container {
     width: 1030px;
     display: flex;
     gap: 50px;
@@ -400,4 +400,11 @@ hr {
 
 .social-part p:hover {
     color: #B80000;
+}
+
+/* responsive part */
+@media screen and (min-width: 577px) and (max-width: 768){
+    header{
+        background-color: red;
+    }
 }
